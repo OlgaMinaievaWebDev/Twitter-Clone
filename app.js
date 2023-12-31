@@ -3,10 +3,7 @@ import { tweetsData } from "./data.js";
 const tweetInput = document.getElementById("tweet-input");
 const tweetBtn = document.getElementById("tweet-btn");
 
-tweetBtn.addEventListener("click", function () {
- 
-
-});
+tweetBtn.addEventListener("click", function () {});
 
 //set HTML for each tweet
 function getFeedHtml() {
@@ -22,12 +19,15 @@ function getFeedHtml() {
             <p class="tweet-text">${tweet.tweetText}</p>
             <div class="tweet-details">
                 <span class="tweet-detail">
+                <i class="fa-regular fa-comment-dots"></i>
                     ${tweet.replies.length}
                 </span>
                 <span class="tweet-detail">
+                <i class="fa-solid fa-heart"></i>
                    ${tweet.likes}
                 </span>
                 <span class="tweet-detail">
+                <i class="fa-solid fa-retweet"></i>
                     ${tweet.retweets}
                 </span>
             </div>   
@@ -45,5 +45,4 @@ function render() {
   document.getElementById("feed").innerHTML = getFeedHtml();
 }
 
-
- render();
+render();
