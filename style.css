@@ -73,6 +73,7 @@ button {
   font-weight: 600;
 }
 
+
 /* tweet */
 
 .tweet {
@@ -98,6 +99,12 @@ button {
 .tweet-detail {
   display: flex;
   gap: 4px;
+}
+
+.tweet-text {
+  width: 207px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .tweet-reply {
